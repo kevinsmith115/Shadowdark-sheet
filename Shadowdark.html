@@ -1,6 +1,6 @@
 <main>
   <section class="header f-center">
-    <h1>Example RPG</h1>
+    <h1>Shadowdark RPG</h1>
     <span>The Template Sheet</span>
   </section>
 
@@ -14,13 +14,13 @@
   <section class="skill f-col nowrap">
     <h3>Attributes</h3>
     <div class="f-row nowrap">
-      <label>Body</label>
-      <input type="number" name="attr_body" value="3">
-      <button type="roll" name="roll_body" value="&{template:rolls} {{title=Body}} {{subtitle=@{character_name} }} {{roll= [[d20+@{body}[body] ]]}}"> </button>
+      <label>Strength</label>
+      <input type="number" name="attr_strength" value="10">
+      <button type="roll" name="roll_strength" value="&{template:rolls} {{title=strength}} {{subtitle=@{character_name} }} {{roll= [[d20+@{strength}[strength] ]]}}"> </button>
     </div>
     <div class="f-row nowrap">
       <label>Mind</label>
-      <input type="number" name="attr_mind" value="3">
+      <input type="number" name="attr_mind" value="10">
       <button type="roll" name="roll_mind" value="&{template:rolls} {{title=Mind}} {{subtitle=@{character_name} }} {{roll= [[d20+@{mind}[mind] ]]}}"> </button>
     </div>
     <div class="f-row nowrap">
@@ -85,7 +85,8 @@
 <datalist id="class">
     <option value="Fighter">Fighter</option>
     <option value="Mage">Mage</option>
-    <option value="Expert">Expert</option>
+    <option value="Expert">Thief</option>
+    <option value="Expert">Priest</option>
 </datalist>
 
 <!-- roll template -->
